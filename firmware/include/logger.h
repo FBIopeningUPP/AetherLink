@@ -1,0 +1,33 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+#include <cstdint>
+
+#define FIRMWARE_VERSION "1.0.0"
+#define HARDWARE_VERSION "1.0.0"
+#define DEVICE_NAME "AetherLink"
+
+// Battery Config
+#define BATTERY_3S
+#define BATTERY_4S
+#define BATTERY_6S
+#define BATTERY_8S
+#define BATTERY_10S
+#define BATTERY_12S
+//ACTIVE CONFIG
+#define BATTERY_CELL_COUNT BATTERY_4S
+
+//VOLTAGE READING
+#define ADC_RESOLUTION 12
+#define ADC_REFERENCE_VOLTAGE 3.3f
+#define ADC_MAX_VALUE 4095
+
+// VOLT THRESHOolds
+#define CELL_VOLTAGE_MAX 4.2f
+#define CELL_VOLTAGE_MIN 2.5f
+#define CELL_VOLTAGE_NOMINAL 3.7f
+
+//pack V calc
+#define PACK_VOLTAGE_MAX (CELL_VOLTAGE_MAX * BATTERY_CELL_COUNT)
+#define PACK_VOLTAGE_MIN (CELL_VOLTAGE_MIN * BATTERY_CELL_COUNT)
+
