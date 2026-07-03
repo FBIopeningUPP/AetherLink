@@ -29,3 +29,7 @@ finished the battery manager h files with all the functions and it compiles smoo
 we will move over to battery manager .cpp so we can impleent the reading calculating and monitroing battery data
 
 took guide of ai for mentorship reagarding this and i was told to not make fake values and do real stuff
+
+soo i am restarting and changing a lot of the stuff in this as we will not measure the amp ratings as they take time and efforts do it so we will remove the amp features and only keep the voltage features, measuring amp required shunt resisotrs and all and they occupy spaces
+
+choose the components for the build we will go with ltc6811 as it can monitor many cells and voltage and current and all that monitoring so we will go with that we will start working on the hardware definition and the pinout and everything before hand
