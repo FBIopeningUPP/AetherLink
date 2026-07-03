@@ -2841,7 +2841,7 @@
 				{
 					"directoryIndex" : 13,
 					"id" : "__idf_esp_app_format::@08c2bdce7fd85cdbea06",
-					"jsonFile" : "target-__idf_esp_app_format-e6193a373361ae2c9d22.json",
+					"jsonFile" : "target-__idf_esp_app_format-3059666fc4e1b4868df8.json",
 					"name" : "__idf_esp_app_format",
 					"projectIndex" : 1
 				},
@@ -3149,7 +3149,7 @@
 				{
 					"directoryIndex" : 140,
 					"id" : "__idf_esp_https_ota::@55ee5ec07370a5473c2b",
-					"jsonFile" : "target-__idf_esp_https_ota-b1d95a273730261e5e2b.json",
+					"jsonFile" : "target-__idf_esp_https_ota-f93842aad948a3a763f4.json",
 					"name" : "__idf_esp_https_ota",
 					"projectIndex" : 1
 				},
@@ -3457,7 +3457,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "__ldgen_output_sections.ld::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-__ldgen_output_sections.ld-ddfd03c210b144d8e32c.json",
+					"jsonFile" : "target-__ldgen_output_sections.ld-c609ec4faa20bea6dab9.json",
 					"name" : "__ldgen_output_sections.ld",
 					"projectIndex" : 0
 				},
@@ -3471,7 +3471,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "aetherlink.elf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-aetherlink.elf-b81cd3dd8c8cf0f82acd.json",
+					"jsonFile" : "target-aetherlink.elf-19b64a5ec33b9ad84456.json",
 					"name" : "aetherlink.elf",
 					"projectIndex" : 0
 				},

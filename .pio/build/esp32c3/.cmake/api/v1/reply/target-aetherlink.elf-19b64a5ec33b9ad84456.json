@@ -1168,6 +1168,12 @@
 				"parent" : 194
 			},
 			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 835,
+				"parent" : 1
+			},
+			{
 				"command" : 7,
 				"file" : 2,
 				"line" : 809,
@@ -1177,13 +1183,7 @@
 				"command" : 6,
 				"file" : 23,
 				"line" : 199,
-				"parent" : 197
-			},
-			{
-				"command" : 6,
-				"file" : 0,
-				"line" : 835,
-				"parent" : 1
+				"parent" : 198
 			},
 			{
 				"command" : 5,
@@ -2270,12 +2270,12 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 198,
-			"id" : "__ldgen_output_sections.ld::@6890427a1f51a3e7e1df"
+			"backtrace" : 197,
+			"id" : "_project_elf_src::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 199,
-			"id" : "_project_elf_src::@6890427a1f51a3e7e1df"
+			"id" : "__ldgen_output_sections.ld::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 10,
@@ -2284,6 +2284,10 @@
 		{
 			"backtrace" : 51,
 			"id" : "__idf___pio_env::@8ed72ffb2edf9d360e6d"
+		},
+		{
+			"backtrace" : 67,
+			"id" : "__idf_esp_driver_spi::@a108b58494cdd93e678c"
 		},
 		{
 			"backtrace" : 69,
@@ -2298,20 +2302,16 @@
 			"id" : "__idf_console::@4311ed8d271cc0ee1422"
 		},
 		{
-			"backtrace" : 73,
-			"id" : "__idf_esp_hal_twai::@51ba563199ada2b3f0ba"
-		},
-		{
 			"backtrace" : 74,
 			"id" : "__idf_driver::@76403182dd99a02c203e"
 		},
 		{
-			"backtrace" : 55,
-			"id" : "__idf_esp_driver_gptimer::@b8628cd9d7b32710339f"
+			"backtrace" : 73,
+			"id" : "__idf_esp_hal_twai::@51ba563199ada2b3f0ba"
 		},
 		{
-			"backtrace" : 67,
-			"id" : "__idf_esp_driver_spi::@a108b58494cdd93e678c"
+			"backtrace" : 55,
+			"id" : "__idf_esp_driver_gptimer::@b8628cd9d7b32710339f"
 		},
 		{
 			"backtrace" : 78,
@@ -2334,12 +2334,12 @@
 			"id" : "__idf_esp_driver_ledc::@9a01f21f38f01238ca77"
 		},
 		{
-			"backtrace" : 84,
-			"id" : "__idf_esp_hal_rmt::@de1b8987904643f454ff"
-		},
-		{
 			"backtrace" : 85,
 			"id" : "__idf_esp_driver_rmt::@0efb206e593213c2b54a"
+		},
+		{
+			"backtrace" : 84,
+			"id" : "__idf_esp_hal_rmt::@de1b8987904643f454ff"
 		},
 		{
 			"backtrace" : 86,

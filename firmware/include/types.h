@@ -1,23 +1,14 @@
-#pragma once 
-#include <stdint.h>
-#include <stdbool.h>
+#pragma once
+#include <cstdint>
 
-#ifndef BATTERY_MAX_CELLS
-#define BATTERY_MAX_CELLS 12
-#endif
+struct __attribute__((packed)) BatteryState {
+    uint16_t cell_voltages_mv[16];
+    uint32_t pack_voltage_mv;
+    uint16_t max_cell_delta_mv;
+    uint8_t soc_percentage;
 
-typedef struct {
-    float cell_voltages[BATTERY_MAX_CELLS];
-    uint8_t cell_count;
-
-    float pack_voltage;
-    float min_cell_voltage;
-    float max_cell_voltage;
-    float cell_delta;
-    float soc_percent;
-
-    bool current_valid;
-    float pack_current;
-
-    uint32_t fault_flags;
-} battery_snapshot_t;
+    uint8_t soh_percentage;
+    uint8_t pack_status;
+    uint16_t charge_cycles;
+    uint16_t discharge_cycles;
+}
