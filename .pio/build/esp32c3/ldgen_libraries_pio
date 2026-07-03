@@ -74,6 +74,7 @@ G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/esp_phy/libesp_phy.a
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/esp_netif/libesp_netif.a
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/wpa_supplicant/libwpa_supplicant.a
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/esp_coex/libesp_coex.a
+G:/Apps/platformio/packages/framework-espidf/components/esp_coex/lib/esp32c3/libcoexist.a
 G:/Apps/platformio/packages/framework-espidf/components/esp_wifi/lib/esp32c3/libcore.a
 G:/Apps/platformio/packages/framework-espidf/components/esp_wifi/lib/esp32c3/libespnow.a
 G:/Apps/platformio/packages/framework-espidf/components/esp_wifi/lib/esp32c3/libmesh.a
@@ -134,6 +135,9 @@ G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/esp_coex/libesp_coex.a
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/esp_wifi/libesp_wifi.a
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/esp_driver_spi/libesp_driver_spi.a
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/esp_gdbstub/libesp_gdbstub.a
+G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/bt/libbt.a
+G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/esp_driver_spi/libesp_driver_spi.a
+G:/Apps/platformio/packages/framework-espidf/components/bt/controller/lib_esp32c3_family/esp32c3/libbtdm_app.a
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/unity/libunity.a
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/cmock/libcmock.a
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/unity/libunity.a
@@ -161,11 +165,11 @@ G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/sdmmc/libsdmmc.a
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/esp_driver_sdm/libesp_driver_sdm.a
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/esp_driver_sd_intf/libesp_driver_sd_intf.a
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/esp_driver_sdspi/libesp_driver_sdspi.a
-G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/esp_driver_spi/libesp_driver_spi.a
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/esp_driver_tsens/libesp_driver_tsens.a
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/esp_driver_twai/libesp_driver_twai.a
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/esp_eth/libesp_eth.a
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/esp_hid/libesp_hid.a
+G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/bt/libbt.a
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/tcp_transport/libtcp_transport.a
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/esp_http_client/libesp_http_client.a
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/esp_http_server/libesp_http_server.a

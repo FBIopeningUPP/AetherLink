@@ -19,7 +19,7 @@ static void telemetry_task(void *pvParameters) {
         esp_err_t err = battery_manager_update();
 
         if (err == ESP_OK) {
-            const BatteryState* latest state = battery_manager_get_state();
+            const BatteryState* latest_state = battery_manager_get_state();
             ble_manager_update_telemetry(latest_state);
         } else {
             ESP_LOGW(TAG, "Skipping BLE update due to AFE read error.");
