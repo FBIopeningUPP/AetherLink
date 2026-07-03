@@ -27,3 +27,5 @@ i will write the battery moniring interface so, i will declare everything like t
 finished the battery manager h files with all the functions and it compiles smoothely
 
 we will move over to battery manager .cpp so we can impleent the reading calculating and monitroing battery data
+
+took guide of ai for mentorship reagarding this and i was told to not make fake values and do real stuff
