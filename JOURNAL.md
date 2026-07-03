@@ -37,3 +37,5 @@ choose the components for the build we will go with difference ic as it can moni
 so what i planned is to start working on the hardware first cause it is easy to work on so i will be making a pinout.md file for better management
 
 i will be wriitng pinout.h so it can help platform io and all the whoel code
+
+now i will start making the pcb design after these updates
