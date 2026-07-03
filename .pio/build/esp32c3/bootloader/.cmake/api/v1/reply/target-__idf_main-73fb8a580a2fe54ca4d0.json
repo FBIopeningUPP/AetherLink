@@ -452,12 +452,12 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 6,
-			"id" : "bootloader_ld_in_preprocess::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 2,
 			"id" : "__idf_hal::@41c1a00f56cd1e9ede18"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "bootloader_ld_in_preprocess::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "__idf_main::@7368607ed66887415643",

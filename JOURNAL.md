@@ -45,3 +45,4 @@ woill be shifting to BQ7695202PFBR for better support of 3s-12s batteries and wi
 ## DAY 2 July 4th
 
 will be updating ble_manager.cpp for the new code and structure of the code
+eveyrthing is done and firmware is done

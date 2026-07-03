@@ -7,7 +7,8 @@
 			"add_custom_target",
 			"__idf_build_binary",
 			"idf_build_executable",
-			"project"
+			"project",
+			"add_custom_command"
 		],
 		"files" : 
 		[
@@ -42,7 +43,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 559,
+				"line" : 553,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 542,
 				"parent" : 3
 			}
 		]
@@ -50,11 +57,12 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "gen_AetherLink_binary::@6890427a1f51a3e7e1df"
+			"backtrace" : 5,
+			"id" : "aetherlink.elf::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "gen_project_binary::@6890427a1f51a3e7e1df",
-	"name" : "gen_project_binary",
+	"id" : "gen_aetherlink_binary::@6890427a1f51a3e7e1df",
+	"name" : "gen_aetherlink_binary",
 	"paths" : 
 	{
 		"build" : ".",
@@ -73,7 +81,8 @@
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -82,13 +91,19 @@
 		{
 			"backtrace" : 4,
 			"isGenerated" : true,
-			"path" : ".pio/build/esp32c3/CMakeFiles/gen_project_binary",
+			"path" : ".pio/build/esp32c3/CMakeFiles/gen_aetherlink_binary",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : ".pio/build/esp32c3/CMakeFiles/gen_project_binary.rule",
+			"path" : ".pio/build/esp32c3/CMakeFiles/gen_aetherlink_binary.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".pio/build/esp32c3/.bin_timestamp.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

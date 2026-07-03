@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: AetherLink
+# Project: aetherlink
 # Configurations: 
 # =============================================================================
 # =============================================================================
@@ -22,7 +22,7 @@ rule CUSTOM_COMMAND
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__AetherLink.2eelf_unscanned_
+rule C_COMPILER__aetherlink.2eelf_unscanned_
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}G:\Apps\platformio\packages\toolchain-riscv32-esp\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -32,7 +32,7 @@ rule C_COMPILER__AetherLink.2eelf_unscanned_
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__AetherLink.2eelf_
+rule CXX_EXECUTABLE_LINKER__aetherlink.2eelf_
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && G:\Apps\platformio\packages\toolchain-riscv32-esp\bin\riscv32-esp-elf-g++.exe $FLAGS $LINK_FLAGS @$RSP_FILE -o $TARGET_FILE && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   rspfile = $RSP_FILE

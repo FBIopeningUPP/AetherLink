@@ -5,14 +5,14 @@ G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/CMakeFiles/save-defconfig.dir
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/CMakeFiles/flash.dir
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/CMakeFiles/bootloader.dir
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/CMakeFiles/_project_elf_src.dir
-G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/CMakeFiles/AetherLink.elf.dir
+G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/CMakeFiles/aetherlink.elf.dir
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/CMakeFiles/size.dir
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/CMakeFiles/size-files.dir
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/CMakeFiles/size-components.dir
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/CMakeFiles/uf2.dir
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/CMakeFiles/uf2-app.dir
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/CMakeFiles/__ldgen_output_sections.ld.dir
-G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/CMakeFiles/gen_AetherLink_binary.dir
+G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/CMakeFiles/gen_aetherlink_binary.dir
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/CMakeFiles/gen_project_binary.dir
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/CMakeFiles/app.dir
 G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/CMakeFiles/app-flash.dir

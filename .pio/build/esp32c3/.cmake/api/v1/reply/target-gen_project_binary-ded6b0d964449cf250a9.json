@@ -5,7 +5,7 @@
 		"commands" : 
 		[
 			"add_custom_target",
-			"__esptool_py_setup_utility_targets",
+			"__idf_build_binary",
 			"idf_build_executable",
 			"project"
 		],
@@ -36,13 +36,13 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 884,
+				"line" : 872,
 				"parent" : 2
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 740,
+				"line" : 559,
 				"parent" : 3
 			}
 		]
@@ -50,12 +50,11 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 4,
-			"id" : "AetherLink.elf::@6890427a1f51a3e7e1df"
+			"id" : "gen_aetherlink_binary::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "monitor::@6890427a1f51a3e7e1df",
-	"name" : "monitor",
+	"id" : "gen_project_binary::@6890427a1f51a3e7e1df",
+	"name" : "gen_project_binary",
 	"paths" : 
 	{
 		"build" : ".",
@@ -83,13 +82,13 @@
 		{
 			"backtrace" : 4,
 			"isGenerated" : true,
-			"path" : ".pio/build/esp32c3/CMakeFiles/monitor",
+			"path" : ".pio/build/esp32c3/CMakeFiles/gen_project_binary",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : ".pio/build/esp32c3/CMakeFiles/monitor.rule",
+			"path" : ".pio/build/esp32c3/CMakeFiles/gen_project_binary.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

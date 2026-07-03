@@ -5,10 +5,9 @@
 		"commands" : 
 		[
 			"add_custom_target",
-			"__idf_build_binary",
+			"__esptool_py_setup_utility_targets",
 			"idf_build_executable",
-			"project",
-			"add_custom_command"
+			"project"
 		],
 		"files" : 
 		[
@@ -37,19 +36,13 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 872,
+				"line" : 884,
 				"parent" : 2
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 553,
-				"parent" : 3
-			},
-			{
-				"command" : 4,
-				"file" : 0,
-				"line" : 542,
+				"line" : 740,
 				"parent" : 3
 			}
 		]
@@ -57,12 +50,12 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 5,
-			"id" : "AetherLink.elf::@6890427a1f51a3e7e1df"
+			"backtrace" : 4,
+			"id" : "aetherlink.elf::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "gen_AetherLink_binary::@6890427a1f51a3e7e1df",
-	"name" : "gen_AetherLink_binary",
+	"id" : "monitor::@6890427a1f51a3e7e1df",
+	"name" : "monitor",
 	"paths" : 
 	{
 		"build" : ".",
@@ -81,8 +74,7 @@
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				1,
-				2
+				1
 			]
 		}
 	],
@@ -91,19 +83,13 @@
 		{
 			"backtrace" : 4,
 			"isGenerated" : true,
-			"path" : ".pio/build/esp32c3/CMakeFiles/gen_AetherLink_binary",
+			"path" : ".pio/build/esp32c3/CMakeFiles/monitor",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : ".pio/build/esp32c3/CMakeFiles/gen_AetherLink_binary.rule",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : ".pio/build/esp32c3/.bin_timestamp.rule",
+			"path" : ".pio/build/esp32c3/CMakeFiles/monitor.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

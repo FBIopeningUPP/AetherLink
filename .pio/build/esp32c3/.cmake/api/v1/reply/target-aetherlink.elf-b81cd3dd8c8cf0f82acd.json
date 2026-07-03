@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "AetherLink.elf"
+			"path" : "aetherlink.elf"
 		}
 	],
 	"backtrace" : 2,
@@ -1168,12 +1168,6 @@
 				"parent" : 194
 			},
 			{
-				"command" : 6,
-				"file" : 0,
-				"line" : 835,
-				"parent" : 1
-			},
-			{
 				"command" : 7,
 				"file" : 2,
 				"line" : 809,
@@ -1183,7 +1177,13 @@
 				"command" : 6,
 				"file" : 23,
 				"line" : 199,
-				"parent" : 198
+				"parent" : 197
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 835,
+				"parent" : 1
 			},
 			{
 				"command" : 5,
@@ -2270,12 +2270,12 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 197,
-			"id" : "_project_elf_src::@6890427a1f51a3e7e1df"
+			"backtrace" : 198,
+			"id" : "__ldgen_output_sections.ld::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 199,
-			"id" : "__ldgen_output_sections.ld::@6890427a1f51a3e7e1df"
+			"id" : "_project_elf_src::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 10,
@@ -2284,26 +2284,6 @@
 		{
 			"backtrace" : 51,
 			"id" : "__idf___pio_env::@8ed72ffb2edf9d360e6d"
-		},
-		{
-			"backtrace" : 55,
-			"id" : "__idf_esp_driver_gptimer::@b8628cd9d7b32710339f"
-		},
-		{
-			"backtrace" : 73,
-			"id" : "__idf_esp_hal_twai::@51ba563199ada2b3f0ba"
-		},
-		{
-			"backtrace" : 74,
-			"id" : "__idf_driver::@76403182dd99a02c203e"
-		},
-		{
-			"backtrace" : 78,
-			"id" : "__idf_esp_blockdev_util::@d23c2a3f92d58ca67124"
-		},
-		{
-			"backtrace" : 67,
-			"id" : "__idf_esp_driver_spi::@a108b58494cdd93e678c"
 		},
 		{
 			"backtrace" : 69,
@@ -2316,6 +2296,26 @@
 		{
 			"backtrace" : 71,
 			"id" : "__idf_console::@4311ed8d271cc0ee1422"
+		},
+		{
+			"backtrace" : 73,
+			"id" : "__idf_esp_hal_twai::@51ba563199ada2b3f0ba"
+		},
+		{
+			"backtrace" : 74,
+			"id" : "__idf_driver::@76403182dd99a02c203e"
+		},
+		{
+			"backtrace" : 55,
+			"id" : "__idf_esp_driver_gptimer::@b8628cd9d7b32710339f"
+		},
+		{
+			"backtrace" : 67,
+			"id" : "__idf_esp_driver_spi::@a108b58494cdd93e678c"
+		},
+		{
+			"backtrace" : 78,
+			"id" : "__idf_esp_blockdev_util::@d23c2a3f92d58ca67124"
 		},
 		{
 			"backtrace" : 79,
@@ -2350,6 +2350,18 @@
 			"id" : "__idf_esp_driver_sd_intf::@9cb2f063b9dd7d282253"
 		},
 		{
+			"backtrace" : 88,
+			"id" : "__idf_esp_driver_sdm::@601b6ef28d63f823a7b4"
+		},
+		{
+			"backtrace" : 89,
+			"id" : "__idf_esp_driver_sdspi::@c293af58c49fe790ac32"
+		},
+		{
+			"backtrace" : 90,
+			"id" : "__idf_esp_driver_tsens::@dad043442c4ac9e51f1a"
+		},
+		{
 			"backtrace" : 91,
 			"id" : "__idf_esp_driver_twai::@0c7b27fa84c4efa2b2b9"
 		},
@@ -2362,20 +2374,20 @@
 			"id" : "__idf_esp_hid::@15df40e16a5d8775dd9b"
 		},
 		{
-			"backtrace" : 99,
-			"id" : "__idf_esp_lcd::@d5a84597e1633c9ab0d3"
-		},
-		{
 			"backtrace" : 98,
 			"id" : "__idf_esp_https_server::@a47490a9e49b7eabdb18"
 		},
 		{
-			"backtrace" : 101,
-			"id" : "__idf_protocomm::@d76d01c8dec06205e1fc"
+			"backtrace" : 99,
+			"id" : "__idf_esp_lcd::@d5a84597e1633c9ab0d3"
 		},
 		{
 			"backtrace" : 100,
 			"id" : "__idf_protobuf-c::@b14513c4bd859268ec22"
+		},
+		{
+			"backtrace" : 101,
+			"id" : "__idf_protocomm::@d76d01c8dec06205e1fc"
 		},
 		{
 			"backtrace" : 102,
@@ -2390,18 +2402,6 @@
 			"id" : "__idf_fatfs::@75ac1d9b25dacc8cc9e7"
 		},
 		{
-			"backtrace" : 88,
-			"id" : "__idf_esp_driver_sdm::@601b6ef28d63f823a7b4"
-		},
-		{
-			"backtrace" : 89,
-			"id" : "__idf_esp_driver_sdspi::@c293af58c49fe790ac32"
-		},
-		{
-			"backtrace" : 90,
-			"id" : "__idf_esp_driver_tsens::@dad043442c4ac9e51f1a"
-		},
-		{
 			"backtrace" : 106,
 			"id" : "__idf_rt::@c044be52929cb104e3c1"
 		},
@@ -2414,7 +2414,7 @@
 			"id" : "__idf_src::@2478b13de56d3028f688"
 		}
 	],
-	"id" : "AetherLink.elf::@6890427a1f51a3e7e1df",
+	"id" : "aetherlink.elf::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -2439,7 +2439,7 @@
 			},
 			{
 				"backtrace" : 5,
-				"fragment" : "-Wl,--Map=G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/AetherLink.map",
+				"fragment" : "-Wl,--Map=G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/aetherlink.map",
 				"role" : "flags"
 			},
 			{
@@ -5660,8 +5660,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "AetherLink.elf",
-	"nameOnDisk" : "AetherLink.elf",
+	"name" : "aetherlink.elf",
+	"nameOnDisk" : "aetherlink.elf",
 	"paths" : 
 	{
 		"build" : ".",
