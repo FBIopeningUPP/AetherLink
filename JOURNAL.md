@@ -32,4 +32,8 @@ took guide of ai for mentorship reagarding this and i was told to not make fake 
 
 soo i am restarting and changing a lot of the stuff in this as we will not measure the amp ratings as they take time and efforts do it so we will remove the amp features and only keep the voltage features, measuring amp required shunt resisotrs and all and they occupy spaces
 
-choose the components for the build we will go with ltc6811 as it can monitor many cells and voltage and current and all that monitoring so we will go with that we will start working on the hardware definition and the pinout and everything before hand
+choose the components for the build we will go with difference ic as it can monitor many cells and voltage and current and all that monitoring so we will go with that we will start working on the hardware definition and the pinout and everything before hand
+
+so what i planned is to start working on the hardware first cause it is easy to work on so i will be making a pinout.md file for better management
+
+i will be wriitng pinout.h so it can help platform io and all the whoel code
