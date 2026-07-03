@@ -20,3 +20,7 @@ made the whole types.h files with every type of thing there and verified it with
 
 now we move to the next file which is main.cpp the main file that will initilize the system and run the event loop
 completed the main.cpp for proper usage with proper message and everything
+
+and lets move to battery_manager.h for the battery managing logic
+
+i will write the battery moniring interface so, i will declare everything like the reading calclulating and managing battery's data
