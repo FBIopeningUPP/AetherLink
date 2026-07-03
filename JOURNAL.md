@@ -17,3 +17,6 @@ checked all the things using pio run -t compiledb
 
 moved towards a new file that is types h for all the data types used in code
 made the whole types.h files with every type of thing there and verified it with command pio run -t compiledb and it works
+
+now we move to the next file which is main.cpp the main file that will initilize the system and run the event loop
+completed the main.cpp for proper usage with proper message and everything
