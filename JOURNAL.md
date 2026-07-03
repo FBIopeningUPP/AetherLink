@@ -25,3 +25,5 @@ and lets move to battery_manager.h for the battery managing logic
 
 i will write the battery moniring interface so, i will declare everything like the reading calclulating and managing battery's data
 finished the battery manager h files with all the functions and it compiles smoothely
+
+we will move over to battery manager .cpp so we can impleent the reading calculating and monitroing battery data
