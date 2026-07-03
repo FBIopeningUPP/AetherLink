@@ -49,3 +49,4 @@ eveyrthing is done and firmware is done
 
 will be working on website
 writing the whole code  finished the js code 
+i wrote the code for css like the basic code what ever will be required, and i will try to take help form ai for furhter html optimization
