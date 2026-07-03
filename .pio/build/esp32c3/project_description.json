@@ -1,7 +1,7 @@
 {
     "version":            "1.3",
     "project_name":       "AetherLink",
-    "project_version":    "9fddeb5-dirty",
+    "project_version":    "8afc14c-dirty",
     "project_path":       "G:/Ki-Cad-shit/AetherLink",
     "idf_path":           "G:/Apps/platformio/packages/framework-espidf",
     "build_dir":          "G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3",
@@ -1990,7 +1990,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/esp-idf/src/libsrc.a",
-            "sources": [ "G:/Ki-Cad-shit/AetherLink/firmware/src/CMakeLists.txt", "G:/Ki-Cad-shit/AetherLink/firmware/src/battery_manager.cpp", "G:/Ki-Cad-shit/AetherLink/firmware/src/ble_manager.cpp", "G:/Ki-Cad-shit/AetherLink/firmware/src/bq76940_driver.cpp", "G:/Ki-Cad-shit/AetherLink/firmware/src/logger.cpp", "G:/Ki-Cad-shit/AetherLink/firmware/src/main.cpp", "G:/Ki-Cad-shit/AetherLink/firmware/src/storage_manager.cpp" ],
+            "sources": [ "G:/Ki-Cad-shit/AetherLink/firmware/src/CMakeLists.txt", "G:/Ki-Cad-shit/AetherLink/firmware/src/battery_manager.cpp", "G:/Ki-Cad-shit/AetherLink/firmware/src/ble_manager.cpp", "G:/Ki-Cad-shit/AetherLink/firmware/src/bq76940_driver.cpp", "G:/Ki-Cad-shit/AetherLink/firmware/src/main.cpp" ],
             "include_dirs": []
         },
         "tcp_transport": {

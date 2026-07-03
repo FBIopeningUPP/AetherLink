@@ -41,3 +41,7 @@ i will be wriitng pinout.h so it can help platform io and all the whoel code
 now i will start making the pcb design after these updates
 
 woill be shifting to BQ7695202PFBR for better support of 3s-12s batteries and will be re writing the code and all 
+
+## DAY 2 July 4th
+
+will be updating ble_manager.cpp for the new code and structure of the code

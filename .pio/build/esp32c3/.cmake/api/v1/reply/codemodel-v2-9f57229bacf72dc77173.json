@@ -2771,7 +2771,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "AetherLink.elf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-AetherLink.elf-a8c3467af4a3849e38c4.json",
+					"jsonFile" : "target-AetherLink.elf-6b7ed4b2b80295965ade.json",
 					"name" : "AetherLink.elf",
 					"projectIndex" : 0
 				},
@@ -2848,7 +2848,7 @@
 				{
 					"directoryIndex" : 13,
 					"id" : "__idf_esp_app_format::@08c2bdce7fd85cdbea06",
-					"jsonFile" : "target-__idf_esp_app_format-e6d02030e0f88143cbf8.json",
+					"jsonFile" : "target-__idf_esp_app_format-3e362bfc7e1ded62bdba.json",
 					"name" : "__idf_esp_app_format",
 					"projectIndex" : 1
 				},
@@ -3191,7 +3191,7 @@
 				{
 					"directoryIndex" : 145,
 					"id" : "__idf_esp_local_ctrl::@d6aad58d2946e56208ef",
-					"jsonFile" : "target-__idf_esp_local_ctrl-bf0a85bcc4f60f1d87d8.json",
+					"jsonFile" : "target-__idf_esp_local_ctrl-2e78d54cf1dd0f5a13b2.json",
 					"name" : "__idf_esp_local_ctrl",
 					"projectIndex" : 1
 				},
@@ -3289,7 +3289,7 @@
 				{
 					"directoryIndex" : 149,
 					"id" : "__idf_fatfs::@75ac1d9b25dacc8cc9e7",
-					"jsonFile" : "target-__idf_fatfs-c54d2f00fe00d435cee2.json",
+					"jsonFile" : "target-__idf_fatfs-ab5ff62f50cfc55f5ef1.json",
 					"name" : "__idf_fatfs",
 					"projectIndex" : 1
 				},
@@ -3422,7 +3422,7 @@
 				{
 					"directoryIndex" : 156,
 					"id" : "__idf_src::@2478b13de56d3028f688",
-					"jsonFile" : "target-__idf_src-8761ce4d9b56f603fb78.json",
+					"jsonFile" : "target-__idf_src-24b2b7acc8519999dd5e.json",
 					"name" : "__idf_src",
 					"projectIndex" : 1
 				},
@@ -3464,7 +3464,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "__ldgen_output_sections.ld::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-__ldgen_output_sections.ld-6b63c2b2e70b4880b36d.json",
+					"jsonFile" : "target-__ldgen_output_sections.ld-e4fed72754fe7207e783.json",
 					"name" : "__ldgen_output_sections.ld",
 					"projectIndex" : 0
 				},
