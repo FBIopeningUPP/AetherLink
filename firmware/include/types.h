@@ -100,7 +100,7 @@ typedef struct {
 
 //operational state
 typedef enum {
-    BATTERY_STATE_UNKOWN = 0, // unknown state
+    BATTERY_STATE_UNKNOWN = 0, // unknown state
     BATTERY_STATE_IDLE = 1, // battery is idle
     BATTERY_STATE_CHARGING = 2, // battery is charging
     BATTERY_STATE_DISCHARGING = 3, // battery is discharging
@@ -110,7 +110,7 @@ typedef enum {
 
 //health bif
 typedef enum {
-    BATTERY_HEALTH_UNKOWN = 0, // unknown health
+    BATTERY_HEALTH_UNKNOWN = 0, // unknown health
     BATTERY_HEALTH_EXCELLENT = 1, // battery health is excellent
     BATTERY_HEALTH_GOOD = 2, // battery health is good
     BATTERY_HEALTH_FAIR = 3, // battery health is fair
@@ -201,4 +201,4 @@ typedef struct {
     .timestamp = 0 \
 }
 
-#endif // TYPES_H
+#endif // TYPES_H 

@@ -16,4 +16,4 @@ created and updated the config.h with all the required options for free rtos and
 checked all the things using pio run -t compiledb
 
 moved towards a new file that is types h for all the data types used in code
-made the whole types.h files with every type of thing there
+made the whole types.h files with every type of thing there and verified it with command pio run -t compiledb and it works
