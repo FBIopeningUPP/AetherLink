@@ -1,0 +1,4 @@
+"-specs=G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/bootloader/specs/picolibc.specs"
+-march=rv32imc_zicsr_zifencei
+-mtune=esp-base
+-fno-rtti

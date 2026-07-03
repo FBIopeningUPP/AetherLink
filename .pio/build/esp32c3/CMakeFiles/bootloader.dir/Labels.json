@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "G:/Ki-Cad-shit/AetherLink/.pio/build/esp32c3/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

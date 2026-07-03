@@ -1,0 +1,77 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/mbedtls",
+			"paths" : 
+			[
+				"G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include/mbedtls/build_info.h",
+				"G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include/mbedtls/debug.h",
+				"G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include/mbedtls/error.h",
+				"G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include/mbedtls/mbedtls_config.h",
+				"G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include/mbedtls/net_sockets.h",
+				"G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include/mbedtls/oid.h",
+				"G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include/mbedtls/pkcs7.h",
+				"G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include/mbedtls/ssl.h",
+				"G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include/mbedtls/ssl_cache.h",
+				"G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h",
+				"G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include/mbedtls/ssl_cookie.h",
+				"G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include/mbedtls/ssl_ticket.h",
+				"G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include/mbedtls/timing.h",
+				"G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include/mbedtls/version.h",
+				"G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include/mbedtls/x509.h",
+				"G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include/mbedtls/x509_crl.h",
+				"G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include/mbedtls/x509_crt.h",
+				"G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include/mbedtls/x509_csr.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/mbedtls/private",
+			"paths" : 
+			[
+				"G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include/mbedtls/private/config_adjust_ssl.h",
+				"G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include/mbedtls/private/config_adjust_x509.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "esp-idf/mbedtls/mbedtls/include",
+		"source" : "G:/Apps/platformio/packages/framework-espidf/components/mbedtls/mbedtls/include"
+	}
+}
