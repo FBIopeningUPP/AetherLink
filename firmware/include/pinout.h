@@ -3,7 +3,7 @@
 #define PIN_I2C_SDA     4
 #define PIN_I2C_SCL     5
 
-#define PIN_BQ_ALERT    5
+#define PIN_BQ_ALERT    2
 
 #define PIN_CHG_CTRL    7
 #define PIN_DSG_CTRL    8
