@@ -1,6 +1,7 @@
 #include "battery_manager.h"
 #include "bq76940_driver.h" 
 #include "config.h"
+#include "pinout.h"
 #include "esp_log.h"
 #include <cstring>
 
@@ -10,22 +11,24 @@ static BatteryState current_pack_state;
 
 esp_err_t battery_manager_init() {
     std::memset(&current_pack_state, 0, sizeof(BatteryState));
-    ESP_LOGI(TAG, "Battery Application Manager initialized. Configured for %d cells.", CONFIG_SERIES_CEL);
+    ESP_LOGI(TAG, "Battery Application Manager initialized. Configured for %d cells.", BATTERY_DEFAULT_CELLS);
     return ESP_OK;
 }
 
 esp_err_t battery_manager_update() {
-    esp_err_t err = afe_get_cell_voltages(current_pack_state.cell_voltages_mv, CONFIG_SERIES_CELLS);
-    if (err != ESP_OK) {
+    float temp_cell_mv[12] = {0};
+    bool bq_ok = bq_read_all_cell_mv(temp_cell_mv, BATTERY_DEFAULT_CELLS);
+    if (!bq_ok) {
         ESP_LOGE(TAG, "Telemetry update aborted: Failed to communicate with AFE driver.");
-        return err;
+        return ESP_FAIL;
     }
 
     uint32_t total_pack_mv = 0;
     uint16_t min_cell_mv = 0xFFFF;
     uint16_t max_cell_mv = 0x0000;
 
-    for (int i = 0; i < CONFIG_SERIES_CELLS; i++) {
+    for (int i = 0; i < BATTERY_DEFAULT_CELLS; i++) {
+        current_pack_state.cell_voltages_mv[i] = (uint16_t)temp_cell_mv[i];
         uint16_t cell_mv = current_pack_state.cell_voltages_mv[i];
         total_pack_mv += cell_mv;
         

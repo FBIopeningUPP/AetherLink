@@ -11,4 +11,4 @@ struct __attribute__((packed)) BatteryState {
     uint8_t pack_status;
     uint16_t charge_cycles;
     uint16_t discharge_cycles;
-}
+};

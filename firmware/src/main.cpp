@@ -32,7 +32,7 @@ static void telemetry_task(void *pvParameters) {
 extern "C" void app_main(void) {
     ESP_LOGI(TAG, "Booting AetherLink BMS...");
 
-    esp_err_t err = nvs_flash_init();
+    esp_err_t ret = nvs_flash_init();
 
     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
         ESP_ERROR_CHECK(nvs_flash_erase());
@@ -40,7 +40,9 @@ extern "C" void app_main(void) {
     }
     ESP_ERROR_CHECK(ret);
 
-    ESP_ERROR_CHECK(afe_init());
+    if (!bq_init()) {
+        ESP_LOGE(TAG, "Failed to initialize BQ76940!");
+    }
     ESP_ERROR_CHECK(battery_manager_init());
     ESP_ERROR_CHECK(ble_manager_init());
 

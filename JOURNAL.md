@@ -52,3 +52,7 @@ writing the whole code  finished the js code
 i wrote the code for css like the basic code what ever will be required, and i will try to take help form ai for furhter html optimization
 re writing the types.h to supported the html webpage and re writing battery manager.cpp for better support so i can stuff like health and all|
 updated the full thing with whole new revamped code
+
+i was having compilation error so usage of gemmini 3.1 pro was done using antigravity app just to update the files and fix the code for me so i can do final compilation and then focus on the pcb design
+
+the esp32 image compiled and we are done

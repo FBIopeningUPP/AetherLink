@@ -12,11 +12,13 @@
 
 static const char *TAG = "AetherLink_BLE";
 
+// Battery Service: 0000180F-0000-1000-8000-00805F9B34FB
 static const ble_uuid128_t gatt_svr_svc_uuid =
-    BLE_UUID128_INIT(BLE_SERVICE_UUID_PRIMARY);
+    BLE_UUID128_INIT(0xFB, 0x34, 0x9B, 0x5F, 0x80, 0x00, 0x00, 0x80, 0x00, 0x10, 0x00, 0x00, 0x0F, 0x18, 0x00, 0x00);
 
+// Battery Level Char: 00002A19-0000-1000-8000-00805F9B34FB
 static const ble_uuid128_t gatt_svr_chr_telemetry_uuid =
-    BLE_UUID128_INIT(BLE_CHAR_UUID_BATTERY_STATUS);
+    BLE_UUID128_INIT(0xFB, 0x34, 0x9B, 0x5F, 0x80, 0x00, 0x00, 0x80, 0x00, 0x10, 0x00, 0x00, 0x19, 0x2A, 0x00, 0x00);
 
 static BatteryState current_telemetry;
 static uint16_t telemetry_chr_val_handle;
@@ -31,23 +33,35 @@ static int gatt_svr_chr_access(uint16_t conn_handle, uint16_t attr_handle,
     return BLE_ATT_ERR_UNLIKELY;
 }
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wmissing-field-initializers"
 static const struct ble_gatt_svc_def gatt_svr_svcs[] = {
     {
-            .type = BLE_GATT_SVC_TYPE_PRIMARY,
-            .uuid = &gatt_svr_svc_uuid.u,
-            .characteristics = (struct ble_gatt_chr_def[]) {
-                {
-                    .uuid = &gatt_svr_chr_telemetry_uuid.u,
-                    .access_cb = gatt_svr_chr_access,
-                    .flags = BLE_GATT_CHR_F_READ | BLE_GATT_CHR_F_NOTIFY,
-                    .val_handle = &telemetry_chr_val_handle,
-                },
-                {
-                    0, // No more characteristics in this service
-                }
+        .type = BLE_GATT_SVC_TYPE_PRIMARY,
+        .uuid = &gatt_svr_svc_uuid.u,
+        .includes = NULL,
+        .characteristics = (struct ble_gatt_chr_def[]) {
+            {
+                .uuid = &gatt_svr_chr_telemetry_uuid.u,
+                .access_cb = gatt_svr_chr_access,
+                .arg = NULL,
+                .descriptors = NULL,
+                .flags = BLE_GATT_CHR_F_READ | BLE_GATT_CHR_F_NOTIFY,
+                .min_key_size = 0,
+                .val_handle = &telemetry_chr_val_handle,
             },
-    }
-}
+            {
+                0, // No more characteristics
+            }
+        },
+    },
+    {
+        0, // No more services
+    },
+};
+#pragma GCC diagnostic pop
+
+static uint8_t own_addr_type;
 
 static void ble_app_advertise(void) {
     struct ble_gap_adv_params adv_params;
@@ -59,7 +73,7 @@ static void ble_app_advertise(void) {
     fields.name_len = strlen(device_name);
     fields.name_is_complete = 1;
 
-    fields.uuids128 = (ble_uuid_t *)&gatt_svr_svc_uuid;
+    fields.uuids128 = (const ble_uuid128_t *)&gatt_svr_svc_uuid;
     fields.num_uuids128 = 1;
     fields.uuids128_is_complete = 1;
 
@@ -69,13 +83,13 @@ static void ble_app_advertise(void) {
     adv_params.conn_mode = BLE_GAP_CONN_MODE_UND;
     adv_params.disc_mode = BLE_GAP_DISC_MODE_GEN;
 
-    ble_gap_adv_start(nimble_port_own_addr_type(), NULL, BLE_HS_FOREVER,
+    ble_gap_adv_start(own_addr_type, NULL, BLE_HS_FOREVER,
                       &adv_params, NULL, NULL);
     ESP_LOGI(TAG, "Advertising started as %s", device_name);
 }
 
 static void ble_app_on_sync(void) {
-    ble_hs_id_infer_auto(0, NULL);
+    ble_hs_id_infer_auto(0, &own_addr_type);
     ble_app_advertise();
 }
 
@@ -86,8 +100,13 @@ static void ble_host_task(void *param) {
 }
 
 esp_err_t ble_manager_init() {
-    uint8_t mac[6];
+    uint8_t mac[6] = {0};
+    esp_read_mac(mac, ESP_MAC_BT);
+#ifdef BLE_DEVICE_NAME
     snprintf(device_name, sizeof(device_name), "%s-%02X%02X", BLE_DEVICE_NAME, mac[4], mac[5]);
+#else
+    snprintf(device_name, sizeof(device_name), "AetherLink-%02X%02X", mac[4], mac[5]);
+#endif
     ESP_LOGI(TAG, "Initializing BLE Device: %s", device_name);
 
     esp_err_t err = nimble_port_init();
@@ -111,9 +130,7 @@ esp_err_t ble_manager_init() {
 
 void ble_manager_update_telemetry(const BatteryState* state) {
     if (state != nullptr) {
-
         memcpy(&current_telemetry, state, sizeof(BatteryState));
-
         if (telemetry_chr_val_handle != 0) {
             struct os_mbuf *om = ble_hs_mbuf_from_flat(&current_telemetry, sizeof(BatteryState));
             ble_gatts_notify_custom(0, telemetry_chr_val_handle, om);

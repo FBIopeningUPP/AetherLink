@@ -1,7 +1,15 @@
 #pragma once
+#include <stdint.h>
+#include <stdbool.h>
 
-#include "esp_err.h"
-#include <cstdint>
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-esp_err_t afe_init();
-esp_err_t afe_get_cell_voltages(uint16_t* cell_voltages_mv, uint8_t max_cells);
+bool bq_init(void);
+bool bq_read_all_cell_mv(float cell_mv[12], uint8_t cell_count);
+bool bq_read_faults(uint32_t *flags);
+
+#ifdef __cplusplus
+}
+#endif
