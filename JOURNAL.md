@@ -56,3 +56,5 @@ updated the full thing with whole new revamped code
 i was having compilation error so usage of gemmini 3.1 pro was done using antigravity app just to update the files and fix the code for me so i can do final compilation and then focus on the pcb design
 
 the esp32 image compiled and we are done
+
+there is a big major mistake which is code made wrongly for different ic so antigravity will be doing a quick change

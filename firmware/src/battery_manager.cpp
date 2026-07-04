@@ -1,5 +1,5 @@
 #include "battery_manager.h"
-#include "bq76940_driver.h" 
+#include "bq76952_driver.h" 
 #include "config.h"
 #include "pinout.h"
 #include "esp_log.h"
@@ -16,7 +16,7 @@ esp_err_t battery_manager_init() {
 }
 
 esp_err_t battery_manager_update() {
-    float temp_cell_mv[12] = {0};
+    float temp_cell_mv[16] = {0};
     bool bq_ok = bq_read_all_cell_mv(temp_cell_mv, BATTERY_DEFAULT_CELLS);
     if (!bq_ok) {
         ESP_LOGE(TAG, "Telemetry update aborted: Failed to communicate with AFE driver.");

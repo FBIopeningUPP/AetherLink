@@ -3,7 +3,7 @@
 #include "nvs_flash.h"
 #include "esp_log.h"
 
-#include "bq76940_driver.h"
+#include "bq76952_driver.h"
 #include "battery_manager.h"
 #include "ble_manager.h"
 
