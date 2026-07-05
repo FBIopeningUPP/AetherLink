@@ -6,8 +6,6 @@
 
 #define PIN_BQ_ALERT    2
 
-#define PIN_CHG_CTRL    7
-#define PIN_DSG_CTRL    8
 
 #define PIN_SOC_LED1_25     9
 #define PIN_SOC_LED1_50     10
